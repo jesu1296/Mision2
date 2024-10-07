@@ -1,0 +1,87 @@
+#menu {
+    display: flex; /* Utiliza flexbox para organizar los elementos en una fila */
+    justify-content: space-between; /* Distribuye el espacio entre los elementos */
+    align-items: center; /* Alinea verticalmente los elementos en el centro */
+    background-color: #0084ff; /* Fondo oscuro para el menú */
+    padding: 10px; /* Espaciado interno para el menú */
+    margin-bottom: 20px;
+}
+/*Para cambiar el estilo de los enlaces*/
+#menu a{
+    color: white;
+    text-decoration: none;
+}
+/*Contedero de cada seccion*/
+.promo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 4vh;
+    margin-right: 4vh;
+}
+/*Efecto de "Promociones"*/
+.promo1 h1{
+    background: linear-gradient(to left, red,rgb(255, 31, 31),rgb(254, 57, 57),rgb(253, 77, 77),rgb(255, 101, 101),white);
+    background-clip: text;
+    display: inline;
+    color: transparent;
+    animation: animated 2s linear infinite;
+    font-size: 6vw;
+}
+@keyframes animated{
+    to {background-position-x: 400px;}
+}
+/*Para dividir en 50/50 la proporcion*/
+.promo > div{
+    width: 50%;
+}
+/*Texto*/
+.promo p{
+    font-size: 4vw;
+    text-align: left;
+    
+}
+/*Imagenes*/
+.promo img{
+    height: auto;
+    width: 100%;
+    border-radius: 10%;
+    object-fit:contain;
+}
+/*Boton "Me interesa*/
+.boton{
+    text-align: right;
+    margin-bottom: 5px;
+    margin-right: 4vh;
+}
+/*Boton "Me interesa*/
+.boton a{
+    color: white;
+    text-decoration: none;
+    
+}
+/*Boton "Me interesa*/
+.boton button{
+    background-color:rgb(255, 0, 0);
+    border-radius: 10%;
+}
+/*Titulos de clientes, destinos y resevas,*/
+.promo h2{
+    font-size: 6vw;
+    text-align: left;
+    margin-top: 0%;
+}
+
+.learn-more{
+    font-size: 2vw;
+    margin-left: 4vh;
+    
+}
+.ver-mas{
+    margin-bottom: 10px;
+    text-align: right;
+    margin-right: 4vh;
+}
+footer{
+    text-align: center;
+}
