@@ -1,17 +1,27 @@
+.inicio{
+    background-image: url("https://b834295.smushcdn.com/834295/wp-content/uploads/2018/05/Fotolia_163685634_Subscription_Monthly_M-e1527337340691-1200x552.jpg?lossy=1&strip=1&webp=1");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+    margin-bottom: 5px;
+}
+
 body {
     max-width: 1280px;
     width: 100%;
     margin: 0 auto;
+    background-color:#ECF0F1;
 }
 #menu {
     display: flex; /* Utiliza flexbox para organizar los elementos en una fila */
     justify-content: space-between; /* Distribuye el espacio entre los elementos */
     align-items: center; /* Alinea verticalmente los elementos en el centro */
-    background-color: #0084ff; /* Fondo oscuro para el menú */
+    background-color: #2C3E50; /* Fondo oscuro para el menú */
     padding: 10px 20px; /* Espaciado interno para el menú */
     margin-bottom: 20px;
     gap: 15px;
     flex-wrap: wrap;
+    margin-bottom: 0%;
 }
 /*Para cambiar el estilo de los enlaces*/
 #menu a{
@@ -33,7 +43,7 @@ body {
     display: inline;
     color: transparent;
     animation: animated 2s linear infinite;
-    font-size: 4vw;
+    font-size: 5vw;
 }
 @keyframes animated{
     to {background-position-x: 400px;}
@@ -44,8 +54,9 @@ body {
 }
 /*Texto*/
 .promo p{
-    font-size: 2vw;
+    font-size: 3vw;
     text-align: left;
+    color: #34495E
     
 }
 /*Imagenes*/
@@ -69,14 +80,15 @@ body {
 }
 /*Boton "Me interesa*/
 .boton button{
-    background-color:rgb(255, 0, 0);
+    background-color:#E67E22;
     border-radius: 10%;
 }
 /*Titulos de clientes, destinos y resevas,*/
 .promo h2{
-    font-size: 4vw;
+    font-size: 5vw;
     text-align: left;
     margin-top: 0%;
+    color: #2C3E50;
 }
 
 .learn-more{
