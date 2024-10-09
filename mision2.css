@@ -1,3 +1,47 @@
+nav {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    background-color: #333;
+    padding: 1rem;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 0.5rem;
+    position: relative;
+    transition: all 0.6s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Cambia el color del texto al hacer hover */
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.6s ease;
+}
+
+nav a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+#auth-buttons {
+    margin-left: auto;
+}
 .inicio{
     background-image: url("https://b834295.smushcdn.com/834295/wp-content/uploads/2018/05/Fotolia_163685634_Subscription_Monthly_M-e1527337340691-1200x552.jpg?lossy=1&strip=1&webp=1");
     background-repeat: no-repeat;
@@ -5,7 +49,7 @@
     height: 180px;
     margin-bottom: 5px;
 }
-
+    
 body {
     max-width: 1280px;
     width: 100%;
@@ -44,20 +88,19 @@ body {
     color: transparent;
     animation: animated 2s linear infinite;
     font-size: 5vw;
-}
-@keyframes animated{
-    to {background-position-x: 400px;}
+    }
+    @keyframes animated{
+        to {background-position-x: 400px;}
 }
 /*Para dividir en 50/50 la proporcion*/
 .promo > div{
-    width: 50%;
+        width: 50%;
 }
 /*Texto*/
 .promo p{
     font-size: 3vw;
     text-align: left;
     color: #34495E
-    
 }
 /*Imagenes*/
 .promo img{
@@ -66,17 +109,17 @@ body {
     border-radius: 10%;
     object-fit:contain;
 }
+
 /*Boton "Me interesa*/
 .boton{
     text-align: right;
     margin-bottom: 5px;
     margin-right: 4vh;
-}
+    }
 /*Boton "Me interesa*/
 .boton a{
     color: white;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
 /*Boton "Me interesa*/
 .boton button{
@@ -84,24 +127,22 @@ body {
     border-radius: 10%;
 }
 /*Titulos de clientes, destinos y resevas,*/
-.promo h2{
+    .promo h2{
     font-size: 5vw;
     text-align: left;
     margin-top: 0%;
     color: #2C3E50;
 }
-
 .learn-more{
     font-size: 1vw;
-    margin-left: 4vh;
-    
+    margin-left: 4vh;    
 }
 .ver-mas{
     margin-bottom: 10px;
     text-align: right;
     margin-right: 4vh;
 }
-footer{
+    footer{
     text-align: center;
     font-size: 1vh;
 }
